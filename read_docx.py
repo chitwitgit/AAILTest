@@ -32,7 +32,7 @@ def analyze_with_llm(text):
     return response.choices[0].message.content
 
 if __name__ == "__main__":
-    file_path = 'Samples/Primary/1.docx'
+    file_path = 'Samples/Primary/2.docx'
     report_text = read_docx(file_path)
     analysis = analyze_with_llm(report_text)
     print("Finished Analysis")
